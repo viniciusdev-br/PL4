@@ -1,0 +1,49 @@
+1) O sistema operacional pode ser considerado um software de programa de sistema que irá controlar todos os recursos do computador além de oferecer uma interface simples, porém segura para o usuário e seus dados. Nesse sentido; segundo Silberschatz, Galvin e Gagnem; o S.O irá atuar como intermediário entre o software e o usuário
+
+2) 
+a-Gerenciador de E/S
+b-Loader
+c-Gerenciador de memória
+d-Sistema de arquivos
+e-Núcleo
+
+3)
+BATCH - É um sistema orientado para um excessivo processamento de tarefas ao mesmo tempo, sendo os programas colocados em fila e o processador os recebia em sequência, evitando a ociosidade.
+
+TEMPO REAL - Esses sistemas são caracterizados por ter o tempo como um parâmetro-chave que pode ser classificado em sistemas de tipo Crítico(A ação tem de ocorrer absolutamente em um determinado momento) e Não Crítico( perder um prazo ocasional, embora não desejável, é aceitável e não
+causa danos permanentes).
+
+DÍSTRIBUIDOS - É um conjunto de sistemas autônomos, interconectados por uma rede de
+comunicação e que funciona como se fosse um sistema fortemente acoplado. Cada componente de um
+sistema distribuído possui seus próprios recursos, como processadores, memória principal, dispositivos
+de E/S, sistema operacional e espaço de endereçamento.
+
+4)	Proteger o hardware do acesso direto do usuário. Dessa forma, o sistemas executa em modo kernel enquanto que os demais programas rodam em modo usuário e fazem chamadas ao kernel para ter acesso aos dispositivos, como impressoras ou tempo.
+
+5)	A arquitetura monolítica foi a base dos primeiros sistemas operacionais e pode ser comparada com uma aplicação formada por vários módulos que são   compilados separadamente e depois linkados, formando um grande e único programa executável, onde os módulos podem interagir livremente. Já na arquitetura em camadas, foram aplicadas técnicas de programação estruturada e modular, cada camada oferece um conjunto de funções que podem ser utilizadas apenas pelas camadas superiores, os sitemas Windows e Unix são baseados em duas camadas(privilegiado e não privilegiado).
+	A arquitetura de Máquina Virtual é aplicada criando um nível intermediário entre o hardware e o sistema operacional, denominado gerência de máquinas virtuais. Sendo ali, criadas diversas máquinas virtuais independentes que oferecem uma cópia virtual do hardware. Já a arquitetura de microkernel tentar tornar o núcleo cada vez menor e mais simples, os serviços do sistema são disponibilizados através de processos, onde cada um é responsável por oferecer um conjunto específico de funções, como gerência de arquivos, gerência de processos, gerência de memória e escalonamento.Além disso, a arquitetura microkernel permite isolar as funções do sistema operacional por diversos processos servidores pequenos e dedicados a serviços específicos, tornando o núcleo menor, mais fácil
+de depurar e, consequentemente, aumentando sua confiabilidade.
+
+6)	A arquitetura de camadas divide o s.o em camadas(sistemas sobrepostos) onde cada
+módulo oferece um conjunto de funções que pode ser usado. Já o sistema de micro-núcleo é dividido em processos no objetivo de torna-lo cada vez mais simples e com uma confiabilidade maior
+
+7)	 
+DESVANTEGENS - Apesar do isolamento das aplicações, as máquinas virtuais não estão livres de problemas, como, por exemplo, vírus e erros de
+software do sistema operacional ou aplicações da VM.
+
+VANTAGENS - Portabilidade de código: um programa executável, em linguagem de máquina, precisa de uma plataforma de hardware específica para ser executado, tornando-o dependente desse ambiente. Se o programa for gerado em uma linguagem intermediária e uma VM fizer a tradução dos comandos para a plataforma onde o programa está sendo executado, a aplicação pode ser portada para qualquer ambiente sem a necessidade de se reescrever o programa. 
+Consolidação de servidores:  A ideia da consolidação é poder
+executar diversas aplicações que estariam sendo processadas em diferentes servidores, cada qual com
+o seu hardware e sistema operacional, em uma única máquina, utilizando uma VM para cada uma das
+aplicações. Dessa forma, a consolidação permite a melhor utilização dos recursos computacionais e,
+além disso, também permite a redução de custos de infraestrutura, como energia elétrica, refrigeração,
+espaço físico e cabeamento de rede.
+Facilidade de escalabilidade e balanceamento de carga: caso o sistema no qual a VM está sendo
+processada fique sobrecarregado e apresente problemas de desempenho, a VM pode ser facilmente
+migrada para um novo ambiente que possua maior capacidade de processamento. 
+
+8 ) Os programas de sistema são os softaware que iram gerenciar o hardware em si(ex: sistema operacional e compiladores). Já os programas de aplicação são os programas que o usuário tem o objetivo principal de usar(ex: Navegador Web, Libre office e programas de streaming de vídeos). O hardware é a parte física do computador, que sem um software para gerencia-lo, acaba se tornando inútil.
+
+9) Para garantir a segurança do hardware e do próprio usuário, o modo usuário não tem todos os privilégios que um administrador tem, isso pode se refletir, por exemplo, para ter acesso completo a todo o hardware e pode executar qualquer instrução que a máquina for capaz de executar.
+
+10) 
